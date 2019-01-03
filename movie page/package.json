@@ -1,0 +1,15 @@
+{
+  "name": "movie-page",
+  "version": "1.0.0",
+  "description": "My movie page",
+  "main": "index.js",
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tina Sedaghat",
+  "license": "ISC"
+}
