@@ -1,3 +1,6 @@
+body{
+	background-color: #000;
+}
 .row{
 	margin-top: 10px;
 	margin-bottom:10px;
@@ -6,31 +9,61 @@
 .form-control{
 	text-align: center;
 }
-.glyphicon-search{
-	/*background-color: red;*/
-	/*height:30px;*/
+.aligncenter {
+  float: right;
+  width:33.33333%;
+  text-align:center;
+}
+.alignright {
+ float: right;
+ width:33.33333%;
+ text-align:right;
+}​
+/*.alignleft {
+  float: left;
+  width:33.33333%;
+  text-align:left;
+}*/
+/*.img-fluid{
+	width: 25px;
+	height: 25px;
 }
 #pageicon{
-	width: 25%;
-	height: 25%;
-}
+	width: 25px;
+	height: 25px;
+}*/
 
-.col-lg-6 , .col-md-6 , .col-sm-6{
+/*.col-lg-6 , .col-md-6 , .col-sm-6{
 	text-align: right;
-}
+}*/
 
 .navbar{
 	margin-top: 10px;
 	border-color: #E50914;
+	background-color: black;
 }
- /* for showing content automatically */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: #612626;
+}
+
+/*.dropdown-menu>li>a {
+	background-color: #612626;
+}*/
+
+.dropdown-menu{
+ background-color: #000;
+}
+
+/* for showing content automatically */
 .dropdown:hover .dropdown-menu {
   display: block;
+  background-color: #612626;
 }
 .backgroud-photo{
 	position: relative;
   	text-align: center;
   	color: white;
+  	margin-top: 10px;
   	margin-bottom: 10px;
 }
 .backgroud-photo img{
@@ -42,12 +75,34 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.input-group-addon{
+.searchtext{
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	background-color:#a35f5f;
+}
+#signing{
+	background-color: red;
+}
+/*.btn-default{
+	background-color: #d25555;
+    border-color: #881b1b;
+}*/
+/*.input-group-addon{
 	padding: 0;
 	border-style: none;
-	/*height: 120px;*/
+	
+}*/
+.input-group{
+	position: relative;
 }
+#searchbutton{
+	position: absolute;
+	padding: 0;
+	top:10%;
+}
+/*button.input-group-text{
+	padding: 0;
+}*/
 .owl-stage-outer{
 	padding-top: 20px;
 	display: block;
@@ -58,15 +113,17 @@
 .owl-carousel{
 	/*width: 80%;*/
 	background-color: #000;
+	padding-left: 10px;
 	
   }
 .item{
 	height: 300px;
 	width:200px;
+	 margin: 0 auto;
 }
 .owl-prev {
-    width: 15px;
-    height: 20px;
+    width: 13px;
+    height: 25px;
     position: absolute;
     top: 40%;
     margin-left: -20px;
@@ -76,7 +133,7 @@
 }
 .owl-next {
     width: 15px;
-    height: 20px;
+    height: 25px;
     position: absolute;
     top: 40%;
     right: 0px;
@@ -85,11 +142,20 @@
     background-color: red !important;
 }
 
+
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-	body{
+@media (max-width: 479px) {
+	#pageicon , #signing{
 	display: block;
 	margin-left: auto;
   	margin-right: auto;
 	}
+	#signing{
+		margin-top: 10px;
+		background-color: red;
+	}
+	.searchtext{
+	font-size: 1em;
+	
+}
 }
