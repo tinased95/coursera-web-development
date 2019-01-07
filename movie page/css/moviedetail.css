@@ -1,0 +1,12 @@
+body{
+  background-color: black;
+  color: white;
+}
+hr{
+    background-color: red ;
+    color: red;
+    border: solid .5px red;
+}
+.container-fluid{
+  margin-top: 20px;
+}

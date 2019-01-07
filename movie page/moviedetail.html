@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Detail</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/moviedetail.css">
+
+  </head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-2 col-md-2 text-center">
+          <img id="movieimg" height="300" width="200" alt="Avatar">
+        </div>
+        <div class="col-sm-10 col-md-9">
+          <h2 id="movietitle"></h2>
+          <div id="genrespans"></div>
+          <hr>
+          <p style="font-size: .8em; color: gray;">
+          <span id="movieyear"></span>
+           &nbsp&nbsp
+           <span id="movietime"></span>
+           &nbsp&nbsp 
+           <span id="movielang"></span>
+           &nbsp&nbsp 
+           <span id=movierated style="border-style: groove;"></span>
+           &nbsp&nbsp 
+           <span id="moviecountry"></span>
+            </p>
+            <hr>
+          <p id= "moviedesc">Description: </p>
+          <hr>
+          <p id="moviedirector">Director: </p>
+          <p id="moviestars">Stars: </p>
+        </div>
+      </div>
+    </div>
+  <script src="js/moviedetail.js"></script>
+</body>
+</html>
